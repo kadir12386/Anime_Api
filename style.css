@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form {
+  width: 100%;
+  margin: 0px 0px;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+}
+
+/* navbar title style */
+nav .title {
+  line-height: 70px;
+  color: rgb(243, 243, 235);
+  font-size: 50px;
+  margin-left: 50px;
+  font-family: "Tangerine", cursive;
+}
+
+.logo {
+  position: absolute;
+  top: -28px;
+  width: 130px;
+  height: 130px;
+}
+
+/* conatiner style */
+.conatiner {
+  position: relative;
+  max-width: 1200px;
+  margin: 60px auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* conatiner form input style */
+.conatiner form input {
+  padding: 10px 10px 10px 20px;
+  width: 80%;
+  outline: none;
+  font-size: 18px;
+  border: 2px solid #1111;
+  border-radius: 10px;
+  background: #ffffffdb;
+  text-transform: capitalize;
+}
+
+/* image-container style */
+.image-conatiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* image-container image style */
+.image-conatiner .image {
+  height: 250px;
+  width: 350px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+/* image-container image  img style */
+.image-conatiner .image img {
+  height: 250px;
+  width: 250px;
+  transition: 0.7s linear;
+  border-radius: 8px;
+}
+
+/* card  style starts here */
+.card {
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  border-radius: 10px;
+  padding-top: 20px;
+  border: 1px solid rgb(10, 10, 10);
+}
+
+.card .content h2 {
+  font-size: 17px;
+}
+
+.card .content {
+  padding: 20px 20px 20px 50px;
+  height: 180px;
+}
+
+.card .content p {
+  margin-top: 6px;
+}
+
+.card .content p strong {
+  font-weight: 300;
+  color: rgb(102, 101, 101);
+}
+/* card  style Ends here */
+
+/* button styles */
+button {
+  padding: 10px 30px;
+  border: none;
+  font-size: 20px;
+  background: #1361d6;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 20px;
+  transition: 0.8s;
+}
+
+/*  media  style*/
+@media screen and (max-width: 1200px) {
+  .conatiner {
+    margin: 90px 30px 30px 30px;
+  }
+}
+@media screen and (max-width: 844px) {
+  .conatiner form input {
+    width: 100%;
+  }
+  @media screen and (max-width: 500px) {
+    .conatiner {
+      margin: 90px 10px 10px 10px;
+      padding: 10px;
+    }
+    .card {
+      width: 300px;
+      padding-top: 20px;
+    }
+    .image-conatiner .image {
+      height: 250px;
+      width: 300px;
+    }
+    .card .content {
+      height: 230px;
+      padding: 10px 10px 10px 20px;
+    }
+  }
+
+  button {
+    padding: 10px 30px;
+    display: block;
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    border-radius: 10px;
+    margin-left: 0px;
+  }
+}
